@@ -1,0 +1,32 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: 'daily'
+    ignore:
+      - dependency-name: 'husky'
+        versions:
+          - '^5.0'
+    labels:
+      - 'Dependencies'
+    versioning-strategy: auto
+    registries: '*'
+  - package-ecosystem: 'docker'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    labels:
+      - 'Dependencies'
+
+registries:
+  npm-npmjs:
+    type: npm-registry
+    url: https://registry.npmjs.org
+    username: ${{secrets.DEPENDABOT_NPM_USER}}
+    password: ${{secrets.DEPENDABOT_NPM_TOKEN}}
+  npm-github:
+    type: npm-registry
+    url: https://npm.pkg.github.com
+    token: ${{secrets.DEPENDABOT_GITHUB_PACKAGES_TOKEN}}
+# To learn more about this config file, visit: https://docs.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
