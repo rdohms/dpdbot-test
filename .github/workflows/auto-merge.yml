@@ -20,5 +20,5 @@ jobs:
           merge-method: merge
           use-github-auto-merge: true
           target-development: 'major'
-          target-production: 'minor'
+          target-production: 'major'
 
