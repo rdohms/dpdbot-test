@@ -5,7 +5,7 @@
   "author": "Rafael Dohms <rdohms@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "async": "^2",
+    "async": "^3",
     "debug": "^4.2.0",
     "eslint": "^9",
     "express": "^4.0.0",
