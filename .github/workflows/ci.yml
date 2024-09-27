@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-test:
-    runs-on: np-arm
+    runs-on: np-default
 
     permissions:
       pull-requests: write
@@ -18,6 +18,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 22
+      - name: Install Yarn
+        run: npm install -g yarn
       - run: yarn
       - run: yarn test
 
