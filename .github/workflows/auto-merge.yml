@@ -7,7 +7,7 @@ on:
 
 jobs:
   approve-and-auto-merge:
-    runs-on: np-arm
+    runs-on: ubuntu-latest
 
     permissions:
       pull-requests: write

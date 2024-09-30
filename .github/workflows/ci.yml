@@ -7,7 +7,7 @@ on:
 
 jobs:
   run-test:
-    runs-on: np-default
+    runs-on: ubuntu-latest
 
     permissions:
       pull-requests: write
