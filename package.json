@@ -6,7 +6,7 @@
   "license": "MIT",
   "dependencies": {
     "async": "^3",
-    "commander": "v4",
+    "commander": "v12",
     "debug": "^4.2.0",
     "eslint": "^9",
     "express": "^4.0.0",
