@@ -17,7 +17,7 @@ jobs:
     steps:
       # Simulate this action being in the queue to start and running after CI
       - name: Sleep for 180 seconds
-        run: sleep 30s
+        run: sleep 180s
         shell: bash
       - uses: fastify/github-action-merge-dependabot@v3
         with:
